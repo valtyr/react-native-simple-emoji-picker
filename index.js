@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { View, ScrollView, Text, TouchableOpacity } from 'react-native';
 
 import emoji from './data';
@@ -40,14 +40,6 @@ const EmojiPicker = ({ headerStyle, containerHeight, containerBackgroundColor, e
     </ScrollView>
   </View>
 );
-
-EmojiPicker.propTypes = {
-  onPick: PropTypes.func,
-  headerStyle: PropTypes.object,
-  containerHeight: PropTypes.number.isRequired,
-  containerBackgroundColor: PropTypes.string.isRequired,
-  emojiSize: PropTypes.number.isRequired,
-};
 
 EmojiPicker.defaultProps = {
   containerHeight: 240,
